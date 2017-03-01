@@ -11,10 +11,16 @@ public class Message {
     private String user;
     private long time;
 
-    public Message(String message, String user, long time) {
+    public Message(String message, String user) {
         this.message = message;
         this.user = user;
         this.time = new Date().getTime();
+    }
+
+    public Message(String message, String user, long time) {
+        this.message = message;
+        this.user = user;
+        this.time = time;
     }
 
     public Message() {
